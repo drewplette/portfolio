@@ -1,65 +1,53 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>CatPhotoApp</title>
-  </head>
-  <body>
-    <main>
-      <h1>CatPhotoApp</h1>
-      <section>
-        <h2>Cat Photos</h2>
-        <!-- TODO: Add link to cat photos -->
-        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
-        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
-      </section>
-      <section>
-        <h2>Cat Lists</h2>
-        <h3>Things cats love:</h3>
-        <ul>
-          <li>cat nip</li>
-          <li>laser pointers</li>
-          <li>lasagna</li>
-        </ul>
-        <figure>
-          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
-          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
-        </figure>
-        <h3>Top 3 things cats hate:</h3>
-        <ol>
-          <li>flea treatment</li>
-          <li>thunder</li>
-          <li>other cats</li>
-        </ol>
-        <figure>
-          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
-          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
-        </figure>
-      </section>
-      <section>
-        <h2>Cat Form</h2>
-        <form action="https://freecatphotoapp.com/submit-cat-photo">
-          <fieldset>
-            <legend>Is your cat an indoor or outdoor cat?</legend>
-            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
-            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
-          </fieldset>
-          <fieldset>
-            <legend>What's your cat's personality?</legend>
-            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
-            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
-            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
-          </fieldset>
-          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
-          <button type="submit">Submit</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>
-        No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
-      </p>
-    </footer>
-  </body>
-</html>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <h1 id="title"> Survey Form Project </h1>
+  <p id="description">
+    This is a basic form for the FreeCodeCamp Responsive Web Design certification. It is focusing on my knowledge of HTML.
+  </p>
+  <p>
+<form id="survey-form">
+  <label id="name-label">Your Name: </label><input id="name" type="text" placeholder="Enter your name" required>
+  <br>
+    <label id="email-label" >Your E-Mail:</label>
+  <input id="email" type="email" placeholder="Enter your e-mail" required>
+  <br>
+<label id="number-label">
+    Your Number
+</label>
+  <input id="number" type="number" min="0" max="9999999999999999999" placeholder="Enter your phone number">
+  <br>
+  <label for="dropdown"> Your Preferred Contact Method</label>
+<select id="dropdown">
+  <option value="call">Call</option>
+  <option value="text">Text</option>
+  <option value="email">E-mail</option>
+  </select>
+  <br>
+  <fieldset>
+  <legend>Do you consent to us selling your information for as much money as possible?</legend>
+  <label><input id="yes" type="radio" name="yes-no" value="yes" checked> Yes</label>
+  <label><input id="yes" type="radio" name="yes-no" value=
+  "no">No </label>
+  </fieldset>
+  <fieldset>
+    <legend>Please select the types of hourly calls you wish to receive:</legend>
+    <input id="angry" type="checkbox" name="calltype" value="angry" checked> <label for="angry">Angry</label>
+    <input id="long" type="checkbox" name="calltype" value="long" checked> <label for="long">Long</label>
+  <input id="confusing" type="checkbox" name="calltype" value="confusing" checked> <label for="long">Confusing</label>
+  </fieldset>
+  <br>
+  <label>Please leave any additional comments in the box below.</label>
+  <textarea id="comments" maxlength="5"></textarea>
+  <br>
+  <button id="submit">Submit</button>
+</form>
+</p>
+</body>
+
