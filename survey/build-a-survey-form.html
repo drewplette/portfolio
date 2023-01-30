@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <h1 id="title"> Survey Form Project </h1>
+  <p id="description">
+    This is a basic form for the FreeCodeCamp Responsive Web Design certification. It is focusing on my knowledge of HTML.
+  </p>
+  <p>
+<form id="survey-form">
+  <label id="name-label">Your Name: </label><input id="name" type="text" placeholder="Enter your name" required>
+  <br>
+    <label id="email-label" >Your E-Mail:</label>
+  <input id="email" type="email" placeholder="Enter your e-mail" required>
+  <br>
+<label id="number-label">
+    Your Number
+</label>
+  <input id="number" type="tel" min="0" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Enter your phone number" required>
+  <br>
+  <label for="dropdown"> Your Preferred Contact Method</label>
+<select id="dropdown">
+  <option value="call">Call</option>
+  <option value="text">Text</option>
+  <option value="email">E-mail</option>
+  </select>
+  <br>
+  <fieldset>
+  <legend>Do you consent to us selling your information for as much money as possible?</legend>
+  <label><input id="yes" type="radio" name="yes-no" value="yes" checked> Yes</label>
+  <label><input id="yes" type="radio" name="yes-no" value=
+  "no">No </label>
+  </fieldset>
+  <fieldset>
+    <legend>Please select the types of hourly calls you wish to receive:</legend>
+    <input id="angry" type="checkbox" name="calltype" value="angry" checked> <label for="angry">Angry</label>
+    <input id="long" type="checkbox" name="calltype" value="long" checked> <label for="long">Long</label>
+  <input id="confusing" type="checkbox" name="calltype" value="confusing" checked> <label for="long">Confusing</label>
+  </fieldset>
+  <br>
+  <label>Please leave any additional comments in the box below.</label>
+  <textarea id="comments" maxlength="5"></textarea>
+  <br>
+  <button id="submit">Submit</button>
+</form>
+</p>
+</body>
